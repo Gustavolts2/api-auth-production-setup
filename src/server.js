@@ -1,4 +1,4 @@
-require('dotenv').config();
+require('dotenv').config({ path: __dirname + '/../.env' }); //para que o pm2 leia o .env corretamente
 const express = require('express');
 const connectDatabase = require('./config/database');
 
